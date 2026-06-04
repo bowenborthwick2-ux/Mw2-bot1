@@ -10,11 +10,10 @@ import aiohttp
 # ---------------------------------------------------------------------------
 
 # Fetch secret keys and settings from Railway environment variables
-TOKEN = os.getenv("MTUxMTkxMjkyNzMwNzg5NDkxNg.GLLxVc.3skDCjaIwXB-OnUkU_xyCWkJ_UHLKfc1imQaRI
-")
-GOOGLE_KEY = os.getenv("AIzaSyCRFqqFnUv0TGYcIW7uIMbKe3NTNZs7DQc")
-INPUT_CHAN_ID = int(os.getenv("1473830122648899684, 0))
-OUTPUT_CHAN_ID = int(os.getenv("1473805600503890113", 0))
+TOKEN = os.getenv("DISCORD_TOKEN")
+GOOGLE_KEY = os.getenv("GOOGLE_API_KEY")
+INPUT_CHAN_ID = int(os.getenv("INPUT_CHANNEL", 0))
+OUTPUT_CHAN_ID = int(os.getenv("OUTPUT_CHANNEL", 0))
 
 # Configure Discord bot permissions (intents) to read messages and content
 intents = discord.Intents.default()
